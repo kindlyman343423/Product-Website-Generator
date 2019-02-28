@@ -36,6 +36,20 @@ section{
     width: 100%;
 }
 
+/*PRICING STYLES*/
+#pricing{
+    display: flex;
+}
+.price-card{
+    width: 100%;
+    border-radius: 10px;
+}
+.price-card h2{
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: rgb(241, 36, 36);
+}
 /*FOOTER STYLES*/
 footer{
     color: white;
@@ -65,6 +79,19 @@ footer{
         margin-top: 10px;
         margin-bottom: 5px;
         border-radius: 10px;
+    }
+
+    #pricing{
+        display: block;
+        padding: 50px;
+    }
+    .price-card{
+        border: 2px solid rgb(241, 36, 36);
+        width: 100%;
+        margin: auto;
+    }
+    .price-card-img{
+        width: 100%;
     }
 }
 
