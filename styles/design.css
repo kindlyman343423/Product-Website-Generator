@@ -1,8 +1,18 @@
+/*GLOBAL STYLES*/
 *{
     margin: 0;
     padding: 0;
 }
-/*styling header*/
+section{
+    /* margin-top: 310px; */
+    padding-top: 310px;
+    background-color: rgb(255, 125, 125);
+}
+#video,#pricing{
+    background-color: white;
+}
+
+/*HEADER STYLING*/
 #header{
     position: fixed;
     width: 100%;
@@ -28,15 +38,57 @@
     font-size: 20px;
 }
 
-section{
-    margin-top: 310px;
+/*FORM STYLING*/
+#form
+{
+    text-align: center;
+    padding: 20px;
 }
+#form h2,#form p,#form h3{
+    padding: 10px;
+}
+
+#email{
+    font-size: 20px;
+    padding: 3px;
+    border: 0;
+    border-radius: 10px;
+}
+#email:focus{
+    outline-color: red;
+}
+#submit{
+    background-color: white;
+    border: 0;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px 10px 0px 10px;
+}
+
+/*FEATURE STYLING*/
+.features-hr-div{
+    padding: 10px;
+}
+.features-hr-div hr{
+    width: 80%;
+    margin: auto;
+    border: 1px solid white;
+}
+.div-feature
+{
+    text-align: center;
+}
+
+/*VIDEO STYLING*/
 #video
 {
+    margin-top: 10px;
     width: 100%;
 }
 
-/*PRICING STYLES*/
+/*PRICING STYLING*/
 #pricing{
     display: flex;
 }
@@ -46,11 +98,16 @@ section{
 }
 .price-card h2{
     text-align: center;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
     background-color: rgb(241, 36, 36);
 }
-/*FOOTER STYLES*/
+.price-card p{
+    padding: 5px;
+    text-align: center;
+}
+
+/*FOOTER STYLING*/
 footer{
     color: white;
     background-color: black;
@@ -61,6 +118,7 @@ footer{
 /*small*/
 @media screen and (max-width: 767px)
 {
+    /*HEADER STYLING*/
     #header
     {
         text-align: center;
@@ -81,34 +139,86 @@ footer{
         border-radius: 10px;
     }
 
+    /*FORM STYLING*/
+    /*FEATURE STYLING*/
+    /*VIDEO STYLING*/
+    
+    /*PRICING STYLING*/
     #pricing{
         display: block;
-        padding: 50px;
+        padding: 25px;
     }
     .price-card{
         border: 2px solid rgb(241, 36, 36);
         width: 100%;
         margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
     .price-card-img{
         width: 100%;
     }
+    
+    /*FOOTER STYLING*/
 }
 
 /*tablets*/
-@media (min-width: 992px) and (max-width: 991px)
+@media (min-width: 768px) and (max-width: 991px)
 {
-
+    /*HEADER STYLING*/
+    #nav-bar{
+        float: none;
+        /* text-align: none; */
+    }
+    .nav-link{
+        display: block;
+        margin: none;
+    }
+    /*FORM STYLING*/
+    /*FEATURE STYLING*/
+    /*VIDEO STYLING*/
+    /*PRICING STYLING*/
+    /*FOOTER STYLING*/
+    #header-img{
+        width: 5%;
+    }
+    .nav-link{
+        padding: 5px;
+        width: 25%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+    }
+    .nav-link a{
+        font-size: 
+    }
 }
 
 /*tablets/laptops*/
 @media (min-width: 992px) and (max-width: 1199px)
 {
-
+    /*HEADER STYLING*/
+    /*FORM STYLING*/
+    /*FEATURE STYLING*/
+    /*VIDEO STYLING*/
+    /*PRICING STYLING*/
+    /*FOOTER STYLING*/
+    #header-img{
+        width: 4%;
+    }
 }
 
 /*large*/
 @media screen and (min-width: 1200px)
 {
-
+    /*HEADER STYLING*/
+    /*FORM STYLING*/
+    /*FEATURE STYLING*/
+    /*VIDEO STYLING*/
+    /*PRICING STYLING*/
+    /*FOOTER STYLING*/
+    #header-img{
+        width: 3%;
+    }
 }

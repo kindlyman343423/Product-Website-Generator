@@ -9,53 +9,80 @@
 </head>
 <body>
     <header id="header" style="background-color: black">
-        <img src="images/tesla-logo-small.png" id="header-img" name="company-logo"/>
+        <a href=""><img src="images/tesla-logo-small.png" id="header-img" name="company-logo"/></a>
         <nav id="nav-bar">
-            <button class="nav-link"><a href="#video">Features</a></button>
-            <button class="nav-link"><a href="#features">Preview</a></button>
-            <button class="nav-link"><a href="#pricing">Pricing</a></button>
+            <button class="nav-link"><a href="#form">Features</a></button>
+            <button class="nav-link"><a href="#email">Preview</a></button>
+            <button class="nav-link"><a href="#video">Pricing</a></button>
         </nav>
     </header>
+    
     <section>
         <form id="form">
-            <input type="email" id="email" placeholder="Enter your email address"/>
-            <input type="submit" name="submit" id="submit"/>
+            <h2>Designed for Performance and Aero Efficiency</h2>
+            <p>As an all-electric supercar, Roadster maximizes the potential of aerodynamic engineering—with record-setting performance and efficiency.</p>
+            <h3>Subscribe to our newsletter</h3>
+            <input type="email" id="email" placeholder="Enter your email address"/><br/>
+            <input type="submit" name="SUBSCRIBE" id="submit"/>
         </form>
+
         <div id="features">
             <div class="div-feature">
-
+                <div class="features-hr-div">
+                    <hr/>
+                </div>
+                <h2>Interior</h2>
+                <p>The first supercar to set every performance record and still fit seating for four.</p>
             </div>
             <div class="div-feature">
-
-            </div>
-            <div class="div-feature">
-
+                <div class="features-hr-div">
+                    <hr/>
+                </div>
+                <h2>Glass Roof</h2>
+                <p>A lightweight, removable Glass Roof stores in the trunk for an open-air, convertible driving experience.</p>
+                <div class="features-hr-div">
+                    <hr/>
+                </div>
             </div>
         </div>
+
         <video id="video" poster="images/car.jpg" controls>
             <source src="videos/ezgif.com-video-cutter.mp4" type="video/mp4">
             Your browser doesnot support video tag
         </video>
+        
         <div id="pricing">
             <div class="price-card">
                 <h2>Roadster</h2>
                 <img src="images/roadster.jpg" alt="price card image" class="price-card-img"/>
                 <p>The quickest car in the world, with record-setting acceleration, range and performance.</p>
-                <p>1.9s 0-60 mph</p>
-                <p>+250 mph Top Speed</p>
-                <p>620mi Mile Range</p>
-            </div>
-            <div class="price-card">
-                <h2>Model 3</h2>
-                <img src="images/model-3.jpg" alt="price card image" class="price-card-img"/>
+                <p><strong>1.9s</strong><br/>0-60 mph</p>
+                <p><strong>+250 mph</strong><br/>Top Speed</p>
+                <p><strong>620mi</strong><br/>Mile Range</p>
             </div>
             <div class="price-card">
                 <h2>Model S</h2>
                 <img src="images/model-s.jpg" alt="price card image" class="price-card-img"/>
+                <p>Model S is built from the ground up as an electric vehicle, with high-strength architecture and a floor-mounted battery pack allowing for incredible impact protection.</p>
+                <p><strong>2.4s</strong><br/>0-60 mph</p>
+                <p><strong>30cu ft</strong><br/>Best in Class Storage</p>
+                <p><strong>335mi</strong><br/>Mile Range</p>
+            </div>
+            <div class="price-card">
+                <h2>Model 3</h2>
+                <img src="images/model-3.jpg" alt="price card image" class="price-card-img"/>
+                <p>Safety is the most important part of the overall Model 3 design. The metal structure is a combination of aluminum and steel, for maximum strength in every area. In a roof-crush test, Model 3 resisted four times its own mass, even with an all-glass roof: that's the same weight as two full-grown African elephants.</p>
+                <p><strong>3.2s</strong><br/>0-60 mph</p>
+                <p><strong>325 mi</strong><br/>Range(EPA est.)</p>
+                <p><strong>AWD</strong><br/>Dual Motor</p>
             </div>
             <div class="price-card">
                 <h2>Model X</h2>
                 <img src="images/model-x.jpg" alt="price card image" class="price-card-img"/>
+                <p>Model X is the safest SUV ever. Built from the ground up as an electric vehicle, the body, chassis, restraints and battery technology provide a very low probability of occupant injury.</p>
+                <p><strong>5-Star Safety</strong></p>
+                <p><strong>Room for 7</strong><br/></p>
+                <p><strong>295mi</strong><br/>Mile Range</p>
             </div>
         </div>
     </section>
